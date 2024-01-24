@@ -5,7 +5,6 @@ const buttonCopy = document.querySelector('.button-copy');
 const displayCript = document.querySelector('.displayCript');
 
 const input = document.querySelector('textarea');
-
 const display = document.querySelector('.displayCript');
 
 const cardDescript = document.querySelector('.cardDescript');
@@ -64,14 +63,14 @@ function descriptografar(textoCriptografado) {
     return texto;
 }
 
-buttonCript.addEventListener('click', function() {
+buttonCript.addEventListener('click', () => {
 
     let texto = input.value;
     let textoCriptografado = criptografar(texto);
     display.textContent = textoCriptografado;
 });
 
-buttonDecript.addEventListener('click', function() {
+buttonDecript.addEventListener('click', () => {
 
     let textoCriptografado = input.value;
     let texto = descriptografar(textoCriptografado);
@@ -79,7 +78,7 @@ buttonDecript.addEventListener('click', function() {
 });
 
 
-buttonCopy.addEventListener('click', function() {
+buttonCopy.addEventListener('click', () => {
 
     let tempTextArea = document.createElement('textarea');
     tempTextArea.value = displayCript.textContent;
@@ -94,7 +93,7 @@ buttonCopy.addEventListener('click', function() {
     messageBox.classList.remove('hidden');
     messageBox.classList.add('show');
 
-    setTimeout(function() {
+    setTimeout(() => {
         messageBox.classList.remove('show');
         messageBox.classList.add('hidden');
     }, 2000);
