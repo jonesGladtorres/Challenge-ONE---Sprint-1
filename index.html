@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emcriptador de Texto</title>
+    <link rel= stylesheet href="/src/styles/globalStyles.css">
+    <link rel= stylesheet href="/src/styles/cardDescript.css">
+    <link rel= stylesheet href="/src/styles/header.css">
+    <link rel= stylesheet href="/src/styles/inputs.css">
+    <link rel= stylesheet href="/src/styles/typography.css">
+    <link rel= stylesheet href="/src/styles/buttons.css">
+    <link rel= stylesheet href="/src/styles/tostify.css">
+    <script src="/src/scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./src/img/logo.svg" alt="logotipo da Alura Cursos" id="logo">
+    </header>
+    <main>
+        <div class="input-container">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu texto..."></textarea>
+            <div class="buttonsCript-container">
+                <div class="buttonCript-container">
+                    <div class="alertText-container">
+                        <img src="./src/img/alert-icon.svg" alt="icone de um alerta">
+                        <p class="alertText">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <button class="button-cript">Criptografar</button>
+                </div>
+                <button class="button-descript">Descriptografar</button>
+            </div>
+        </div>
+        <div class="cardDexcript-container">
+            <div class="cardDescript-empty">
+                <img src="./src/img/not_message.svg" alt="Uma pessoa sentada com uma lupa procurando algo em um diamante" class="imgCardDescript-empty">
+                <div class="textCardDescript-empty">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+                </div>
+            </div>
+            <div class="cardDescript hidden">
+                <span class="displayCript"></span>
+                <button class="button-copy">Copiar</button>
+            </div>
+        </div>
+        <div id="messageBox" class="hidden">Texto copiado!</div>
+    </main>
+</body>
+</html>

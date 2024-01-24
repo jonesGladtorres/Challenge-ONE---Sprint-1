@@ -1,0 +1,22 @@
+h1{
+    color: #0a3871;
+}
+
+h2{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #343a40;
+    text-align: center;
+}
+
+h3{
+    font-size: 1rem;
+    color: #495057;
+    text-align: center;
+}
+
+.alertText{
+    font-size: 0.75rem;
+    color: #495057;
+    opacity: 0.8;
+}
